@@ -1,0 +1,11 @@
+$section-inline-padding: clamp(1.25rem, 5vw, 7.125rem);
+$section-block-padding: clamp(3.75rem, 5vw, 7.5rem);
+$section-block-padding-medium: clamp(3.75rem, 5vw, 6rem);
+
+$gap-small: clamp(0.75rem, 5vw, 1.25rem);
+$gap: 1.5rem;
+$gap-medium: clamp(1.25rem, 5vw, 2rem);
+$gap-large: clamp(2rem, 5vw, 3.375rem);
+
+$container-max-width: 90rem;
+$container-max-width-small: 50rem;
