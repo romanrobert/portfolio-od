@@ -5,9 +5,23 @@ body {
   background-color: vars.$clr-light;
   font-size: vars.$font-size-body;
   color: vars.$clr-dark;
+  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.link {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: vars.$font-family-secondary;
+}
+
+.wrapper {
+  max-width: vars.$container-max-width;
+  padding-inline: vars.$section-inline-padding;
+  margin: 0 auto;
 }

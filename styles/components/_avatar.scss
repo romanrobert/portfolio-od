@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as vars;
+
+.avatar,
+.avatar img {
+  position: relative;
+  z-index: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: vars.$border-rounded;
+  object-fit: cover;
+
+  .status-indicator {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0.75rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    background: #48ff1b;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: vars.$border-rounded;
+      background: inherit;
+      animation: pulse 2s infinite;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
