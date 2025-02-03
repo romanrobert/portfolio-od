@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap");
+
+$font-family-primary: "Open Sans", sans-serif;
+$font-family-secondary: "Space Grotesk", sans-serif;
+
+$font-size-h1: clamp(1.5rem, 5vw, 3.75rem);
+$font-size-h2: clamp(2.25rem, 5vw, 3rem);
+$font-size-h3: clamp(1.625rem, 5vw, 2rem);
+$font-size-h4: clamp(1.125rem, 5vw, 1.25rem);
+
+$font-size-body: 1rem;

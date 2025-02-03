@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as vars;
+
+.navigation {
+  position: sticky;
+  top: 0;
+  padding: 0.625rem;
+  border: vars.$border-width solid vars.$clr-dark;
+  border-radius: vars.$border-rounded;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1rem);
+}
+
+.navigation-list {
+  @include flexbox(row, flex-start, stretch, wrap);
+
+  &__item {
+    font-weight: 600;
+    text-transform: uppercase;
+    & a {
+      display: block;
+      padding: 1.25em 1.875em;
+    }
+
+    & a.active {
+      outline: vars.$border-width solid vars.$clr-dark;
+      border-radius: vars.$border-rounded;
+      background: vars.$clr-light;
+    }
+  }
+}

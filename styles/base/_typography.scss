@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as vars;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: vars.$font-family-secondary;
+}
+
+h1.heading-large {
+  font-size: vars.$font-size-h1;
+}
+
+h1,
+h2 {
+  font-size: vars.$font-size-h2;
+}
+
+h3 {
+  font-size: vars.$font-size-h3;
+}
+
+h4 {
+  font-size: vars.$font-size-h4;
+}

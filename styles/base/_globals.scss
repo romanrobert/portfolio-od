@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as vars;
+
+body {
+  font-family: vars.$font-family-primary;
+  background-color: vars.$clr-light;
+  font-size: vars.$font-size-body;
+  color: vars.$clr-dark;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

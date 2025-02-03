@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as var;
+
+header {
+  @include flexbox(row, center, stretch, wrap);
+  margin-top: 2rem;
+}
