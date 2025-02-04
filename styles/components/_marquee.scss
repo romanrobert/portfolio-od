@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as vars;
+
+.marquee {
+  background: vars.$clr-accent;
+  padding: 2.25rem 1.25rem;
+  width: 100vw;
+  font-family: vars.$font-family-secondary;
+  font-weight: 600;
+  font-size: vars.$font-size-h4;
+  overflow: hidden;
+
+  &__content {
+    @include flexbox(row, center, center, no-wrap);
+    gap: 0.25rem;
+  }
+}

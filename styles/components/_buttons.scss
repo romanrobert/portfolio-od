@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as vars;
+
+button {
+  font-family: vars.$font-family-secondary;
+  font-weight: 600;
+  letter-spacing: 2%;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 1.25rem 1.875rem;
+  border-radius: vars.$border-rounded;
+  border: none;
+  outline: vars.$border-width solid vars.$clr-dark;
+  background-color: vars.$clr-light;
+  transition: all 250ms vars.$easing;
+
+  &:hover {
+    transform: translate(0.25rem, -0.25rem);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: translate(0rem, 0rem);
+  }
+}
+
+button.primary {
+  background-color: vars.$clr-dark;
+  color: vars.$clr-light;
+  outline: vars.$border-width solid transparent;
+}

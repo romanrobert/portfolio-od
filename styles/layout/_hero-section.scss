@@ -16,3 +16,21 @@
     gap: vars.$gap-small;
   }
 }
+
+.hero-content .wrapper {
+  & p {
+    font-size: 1.25rem;
+    font-family: vars.$font-family-secondary;
+  }
+  & p:has(a) {
+    padding: 1rem 0rem 2.5rem 0rem;
+  }
+}
+
+.hero-content .avatar,
+.hero-content h1,
+.hero-content p,
+.hero-content button {
+  transform: translateY(0.5rem);
+  opacity: 0;
+}
