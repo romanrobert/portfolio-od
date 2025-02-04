@@ -8,9 +8,26 @@
   font-weight: 600;
   font-size: vars.$font-size-h4;
   overflow: hidden;
+  margin-top: auto;
 
   &__content {
-    @include flexbox(row, center, center, no-wrap);
-    gap: 0.25rem;
+    @include flexbox(row, start, end, no-wrap);
+    white-space: nowrap;
+
+    animation: marquee 15s linear infinite;
+
+    & ul {
+      @include flexbox(row, center, center, no-wrap);
+      gap: 2rem;
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

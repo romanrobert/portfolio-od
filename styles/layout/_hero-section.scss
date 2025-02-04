@@ -14,6 +14,8 @@
   & .hero-content {
     @include flexbox(column, start, start, wrap);
     gap: vars.$gap-small;
+    align-self: stretch;
+    margin-top: 3.75rem;
   }
 }
 
